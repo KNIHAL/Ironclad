@@ -1,6 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "ironclad"
 version = "0.1.0"
+description = "Safety-first, deterministic agent core where AI can plan but never execute"
+requires-python = ">=3.10"
+
+dependencies = [
+    "pydantic>=2.0",
+    "sqlalchemy>=2.0",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "plotly>=5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0"
+]
 
 [tool.setuptools.packages.find]
 where = ["."]
