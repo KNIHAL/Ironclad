@@ -5,3 +5,5 @@ ironcloud.egg-info/
 dist/
 build/
 *.egg
+ironclad.egg-info/
+*.pyc
